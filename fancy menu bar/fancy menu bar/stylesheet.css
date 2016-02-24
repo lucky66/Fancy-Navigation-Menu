@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	margin: 100px auto;
+	width: 1080px;
+	height: 230px;
+}
+div.menubar {
+	width: 180px;
+	height: 210px;
+	float: left;
+	transition:height -4%;
+}
+a {
+	cursor: default;
+}
+div.one {
+	background-color: lightsteelblue;
+}
+div.two {
+	background-color: lightblue;
+}
+div.three {
+	background-color: darkgray;
+}
+div.four {
+	background-color: tan;
+}
+div.five {
+	background-color: silver;
+}
+div.six {
+	background-color: skyblue;
+}
+img.icon {
+	display: block;
+	margin: 40px auto;
+	padding: 20px;
+	background: rgba(255, 255,255,.3);
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 30px rgba(255,255,255,.0);
+	transition: box-shadow .5s;
+}
+p.label {
+	font-size: 1.1em;
+	color: black;
+	text-align: center;
+	opacity: .6;
+	padding-top: 5px;
+	transition: padding-top .4s;
+}
+div.menubar:hover {
+	height: 230px;
+}
+div.menubar:hover p.label {
+	padding-top: 30px;
+	opacity: 1;
+}
+div.menubar img.icon:hover {
+	box-shadow: 0px 0px 0px 0px rgba(255,255,255,.8);
+}
+
+@media screen and (max-width: 1100px) {
+	header {
+		width: 540px;
+	}
+	div.menubar:hover {
+		height: 210px;
+	}
+	div.menubar:hover p.label {
+		padding-top: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		width: 360px;
+	}
+}
